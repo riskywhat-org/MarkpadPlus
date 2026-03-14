@@ -1,0 +1,66 @@
+name: Performance
+description: Report a performance issue or suggest an optimization
+title: "[PERF] "
+labels: ["performance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **IMPORTANT:** Define the PROBLEM only. Do NOT propose solutions, implementation
+        details, or architectural suggestions. The implementer will decide the approach.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the performance issue with observable symptoms.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario
+      description: What triggers it? (e.g., large files, many headings, complex markdown)
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: What happens now, with metrics if available (e.g., timing, memory usage).
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What performance you'd expect.
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: e.g., macOS 15.3, Ubuntu 24.04, Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: MarkpadPlus version
+      placeholder: e.g., v2.5.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: profiling
+    attributes:
+      label: Profiling Data
+      description: Attach profiling output, screenshots, or benchmark results if available.
+    validations:
+      required: false

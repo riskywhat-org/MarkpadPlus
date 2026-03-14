@@ -1,0 +1,50 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **IMPORTANT:** Define the PROBLEM only. Do NOT propose solutions, implementation
+        details, or architectural suggestions. The implementer will decide the approach.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you experiencing? Who is affected and how?
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: What happens today (or what's missing)?
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-outcome
+    attributes:
+      label: Desired Outcome
+      description: What should the user be able to do that they can't today? Describe the *what*, not the *how*.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: How often does this come up? How many users/workflows are affected?
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Screenshots, logs, related issues, or references that help define the problem.
+    validations:
+      required: false

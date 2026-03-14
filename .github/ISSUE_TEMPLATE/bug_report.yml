@@ -1,0 +1,70 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **IMPORTANT:** Define the PROBLEM only. Do NOT propose solutions, implementation
+        details, or architectural suggestions. The implementer will decide the approach.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Minimal steps to trigger the bug.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened.
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: e.g., macOS 15.3, Ubuntu 24.04, Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: MarkpadPlus version
+      placeholder: e.g., v2.5.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Logs
+      description: Paste screenshots or log snippets that help illustrate the issue.
+    validations:
+      required: false

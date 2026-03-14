@@ -1,0 +1,34 @@
+name: Documentation
+description: Suggest documentation improvements or additions
+title: "[DOCS] "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **IMPORTANT:** Define the PROBLEM only. Do NOT propose solutions, implementation
+        details, or architectural suggestions. The implementer will decide the approach.
+
+  - type: textarea
+    id: whats-missing
+    attributes:
+      label: What's Missing or Wrong
+      description: What topic or feature lacks documentation, or what existing docs are incorrect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: who-affected
+    attributes:
+      label: Who Is Affected
+      description: Who needs this documentation and what are they trying to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current State
+      description: What exists today (if anything).
+    validations:
+      required: false
