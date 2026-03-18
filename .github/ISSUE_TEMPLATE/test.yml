@@ -1,0 +1,34 @@
+name: Test
+description: Report missing tests or test infrastructure issues
+title: "[TEST] "
+labels: ["test"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **IMPORTANT:** Define the PROBLEM only. Do NOT propose solutions, implementation
+        details, or architectural suggestions. The implementer will decide the approach.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is untested, under-tested, or broken in the test suite?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why does this need attention? What risk does the gap create?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What areas of the codebase are affected?
+    validations:
+      required: true

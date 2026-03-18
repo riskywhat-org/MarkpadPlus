@@ -1,0 +1,34 @@
+name: CI
+description: Report CI/CD pipeline issues or improvements needed
+title: "[CI] "
+labels: ["ci"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **IMPORTANT:** Define the PROBLEM only. Do NOT propose solutions, implementation
+        details, or architectural suggestions. The implementer will decide the approach.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is broken, slow, or missing in the CI/CD pipeline?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why does this need attention? What impact is it having on development?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What workflows, jobs, or environments are affected?
+    validations:
+      required: true
