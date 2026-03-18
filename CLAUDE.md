@@ -33,7 +33,7 @@ static/                 # Static assets
 
 ## Development Workflow
 
-Use `/workflow` for ALL coding tasks — bug fixes, features, refactors, migrations, scripts. No exceptions.
+Use `/claumago` for ALL coding tasks — bug fixes, features, refactors, migrations, scripts. No exceptions.
 
 ## Language Rules
 
