@@ -1,7 +1,7 @@
-name: Bug Report
-description: Report a bug or unexpected behavior
-title: "[BUG] "
-labels: ["bug"]
+name: Perf
+description: Report a performance issue or suggest an optimization
+title: "[PERF] "
+labels: ["perf"]
 body:
   - type: markdown
     attributes:
@@ -13,35 +13,31 @@ body:
     id: description
     attributes:
       label: Description
-      description: A clear description of the bug.
+      description: Describe the performance issue with observable symptoms.
     validations:
       required: true
 
   - type: textarea
-    id: steps
+    id: scenario
     attributes:
-      label: Steps to Reproduce
-      description: Minimal steps to trigger the bug.
-      value: |
-        1.
-        2.
-        3.
+      label: Scenario
+      description: What triggers it? (e.g., large files, many headings, complex markdown)
     validations:
       required: true
 
   - type: textarea
-    id: expected
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: What happens now, with metrics if available (e.g., timing, memory usage).
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
     attributes:
       label: Expected Behavior
-      description: What you expected to happen.
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual Behavior
-      description: What actually happened.
+      description: What performance you'd expect.
     validations:
       required: true
 
@@ -62,9 +58,9 @@ body:
       required: true
 
   - type: textarea
-    id: screenshots
+    id: profiling
     attributes:
-      label: Screenshots / Logs
-      description: Paste screenshots or log snippets that help illustrate the issue.
+      label: Profiling Data
+      description: Attach profiling output, screenshots, or benchmark results if available.
     validations:
       required: false
